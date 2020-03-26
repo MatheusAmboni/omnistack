@@ -1,6 +1,5 @@
-const crypto = require('crypto');
 const connection = require('../database/connection'); //conexão com o banco
-
+const crypto = require('crypto');
 
 module.exports = {
     async index(request, response) {
@@ -20,9 +19,9 @@ module.exports = {
           email,
           whatsapp,
           city,
-          uf,
+          uf
         })   
 
         return response.json({ id });
     }
-};
+}
