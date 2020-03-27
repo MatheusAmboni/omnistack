@@ -1,5 +1,5 @@
 const connection  = require('../database/connection');
-module.export = {
+module.exports = {
     async index(request, response) {
         const ong_id = request.headers.authorization;
 
